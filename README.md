@@ -127,7 +127,7 @@ FOREIGN KEY (cybr_id) REFERENCES censusyearbuildingrecords (cybr_id) ON DELETE C
 
 ## 7.	Queries for accessing data from MySQL database:
 
-### Query1:
+### Query1: To find the accessibility details of building RMIT with accessibility rating = 3.
 
 select census_year as censusyear,<br />
 building_name as buildingName,<br />
@@ -145,7 +145,7 @@ and cy.censusyear_id=c.censusyear_id<br />
 and building_name= 'RMIT'<br />
 and accessibility_rating = 3;<br />
 
-### Query 2:
+### Query 2: To find the location of the building where census year = 2018, construction year >= 1950 and refurbished year is 2018.
 
 select  census_year as censusYear,<br />
 building_name as buildingName,<br />
@@ -168,7 +168,7 @@ and census_year=2018<br />
 and construction_year>=1950<br />
 and refurbished_year >=2018;<br />
 
-### Query3:
+### Query3: To find the location of the building where census year =2018, construction year >= 2015, and bicycle space and has shower is not null.
 
 select  building_name as buildingName,<br />
 street_address as streetAddress,<br />
