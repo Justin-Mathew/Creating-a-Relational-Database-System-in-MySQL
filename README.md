@@ -3,15 +3,8 @@
 # Index:
 This repository holds Relational Database System project.
 1. [Images](https://github.com/Justin-Mathew/Creating-a-Relational-Database-System-in-MySQL/tree/main/Images) Images used in readme file.
-2. [accessibility](https://github.com/Justin-Mathew/Creating-a-Relational-Database-System-in-MySQL/blob/main/accessibility.csv) Generated table using python code.
-3. [building](https://github.com/Justin-Mathew/Creating-a-Relational-Database-System-in-MySQL/blob/main/building.csv) Generated table using python code.
-4. [building_new](https://github.com/Justin-Mathew/Creating-a-Relational-Database-System-in-MySQL/blob/main/building_new.csv) Generated table using python code.
-5. [buildinglocation](https://github.com/Justin-Mathew/Creating-a-Relational-Database-System-in-MySQL/blob/main/buildinglocation.csv) Generated table using python code.
-6. [buildings](https://github.com/Justin-Mathew/Creating-a-Relational-Database-System-in-MySQL/blob/main/buildings.csv) Main CSV file that is used to generated different tables.
-7. [censusyear](https://github.com/Justin-Mathew/Creating-a-Relational-Database-System-in-MySQL/blob/main/censusyear.csv) Generated table using python code.
-8. [censusyearbuildingrecords](https://github.com/Justin-Mathew/Creating-a-Relational-Database-System-in-MySQL/blob/main/censusyearbuildingrecords.csv) Generated table using python code.
-9. [features](https://github.com/Justin-Mathew/Creating-a-Relational-Database-System-in-MySQL/blob/main/features.csv) Generated table using python code.
-10. [Msql database](https://github.com/Justin-Mathew/Creating-a-Relational-Database-System-in-MySQL/blob/main/mysql%20database.ipynb) PYTHON CODE to generate tables.
+2. [buildings](https://github.com/Justin-Mathew/Creating-a-Relational-Database-System-in-MySQL/blob/main/buildings.csv) Main CSV file that is used to generated different tables.
+3. [Msql database](https://github.com/Justin-Mathew/Creating-a-Relational-Database-System-in-MySQL/blob/main/mysql%20database.ipynb) PYTHON CODE to generate tables.
 
 # Objective:
 The objective is to create a relational database system in MySQL using python pandas for data preparation.
@@ -30,15 +23,15 @@ The dataset consists of 19 columns. It represents different building attributes 
 ![](Images/ER%20diagram.png)
 
 ## Dividing the dataset into 6 different tables:
-1.	Building: This table consists of all the data related to a particular building like property id, base property id, building name, construction year. Creating a new primary key building id for this table.
-2.	Census year: Creating a new primary key census year id for this table. This table consists of primary key and census year.
-3.	Census year building record: This table consists of all the data of a building in a given census year that includes refurbished year, no of floors and predominant space use. Creating a new primary key for this table cybr id.
-4.	Building location:  This table consists of all the data about the location of a particular building. All the data in this table are related to each other. Each clue small area(suburb) has a single block id.
-5.	Accessibility: This table consists of all the data that are related to accessibility of a building for the given census year.
-6.	Features: This table consists of all the data that are related to features like bicycle space and shower facilities of a building for the given census year.
+1.	Building: This table consists of all the data related to a particular building like property id, base property id, building name, construction year. Creating a new primary key building id for this table.[Building_new](https://github.com/Justin-Mathew/Creating-a-Relational-Database-System-in-MySQL/blob/main/building_new.csv) Generated table using python code.
+2.	Census year: Creating a new primary key census year id for this table. This table consists of primary key and census year.[Censusyear](https://github.com/Justin-Mathew/Creating-a-Relational-Database-System-in-MySQL/blob/main/censusyear.csv) Generated table using python code.
+3.	Census year building record: This table consists of all the data of a building in a given census year that includes refurbished year, no of floors and predominant space use. Creating a new primary key for this table cybr id.[Censusyearbuildingrecords](https://github.com/Justin-Mathew/Creating-a-Relational-Database-System-in-MySQL/blob/main/censusyearbuildingrecords.csv) Generated table using python code.
+4.	Building location:  This table consists of all the data about the location of a particular building. All the data in this table are related to each other. Each clue small area(suburb) has a single block id.[Buildinglocation](https://github.com/Justin-Mathew/Creating-a-Relational-Database-System-in-MySQL/blob/main/buildinglocation.csv) Generated table using python code.
+5.	Accessibility: This table consists of all the data that are related to accessibility of a building for the given census year. [Accessibility](https://github.com/Justin-Mathew/Creating-a-Relational-Database-System-in-MySQL/blob/main/accessibility.csv) Generated table using python code.
+6.	Features: This table consists of all the data that are related to features like bicycle space and shower facilities of a building for the given census year.[Features](https://github.com/Justin-Mathew/Creating-a-Relational-Database-System-in-MySQL/blob/main/features.csv) Generated table using python code.
 
 # Data preparation:
-Python pandas is used to divide the dataset to smaller dataset. Each smaller dataset represents a table. New fields have been added wherever needed. These table will be imported to MySQL to create a relational database system.
+Python pandas is used to divide the dataset to smaller dataset. Each smaller dataset represents a table. New fields have been added wherever needed. These table will be imported to MySQL to create a relational database system.[Msql database](https://github.com/Justin-Mathew/Creating-a-Relational-Database-System-in-MySQL/blob/main/mysql%20database.ipynb) PYTHON CODE.
 
 # Importing data to MySQL:
 1.	Install MySQL workbench from the following link:
@@ -199,3 +192,9 @@ and has_showers >0;<br />
 # Conclusion:
 
 Building dataset was divided into smaller tables and new columns were added with the help of python pandas. Tables were imported into MySQL. Finally, queries were written to access data.
+
+# Contact me:
+| Contact Method | Links  |
+| --- | --- |
+| Email | justinmathew.cta@gmail.com |
+| LinkedIn | www.linkedin.com/in/thejustinmathew |
